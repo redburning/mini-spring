@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>SpringMVC</title>
+	<style type="text/css">
+	.card {
+		width: 450px;
+		background-color: rgba(102, 187, 255, .1);
+		margin: 10px;
+	    padding: 20px;
+	    border-radius: 15px;
+	}
+	
+	.flex {
+		display: flex;
+	}
+	
+	.title {
+		font-size: 26px;
+	}
+	
+	.subtitle {
+		font-size: 18px;
+	}
+	
+	.detail-item {
+		font-size: 14px;
+	}
+	
+	.avtar {
+		height: 150px;
+		border-radius: 50%;
+	}
+	
+	.info {
+		width: 100%;
+		padding: 20px;
+	}
+	
+	.main {
+		border-bottom: 2px solid dodgerblue;
+	    padding-bottom: 5px;
+	}
+	
+	.detail {
+		padding-top: 15px;
+	}
+	
+	.form-item {
+		margin-bottom: 10px;
+	}
+	
+	.form-label {
+		display: inline-block;
+	    width: 70px;
+	    text-align-last: justify;
+	}
+	</style>
+</head>
+<body>
+    <div class="card">
+    	<div class="flex">
+    		<img src="../img/avtar.jpeg" class="avtar">
+    		<div class="info">
+    			<div class="main">
+    				<span class="title">${name}</span>&nbsp;/&nbsp;<span class="subtitle">${age}岁</span>
+    			</div>
+    			<div class="detail">
+   					<div class="form-item">
+   						<span class="form-label">手机号码</span>: <span>${phoneNum}</span>
+   					</div>
+   					<div class="form-item">
+   						<span class="form-label">邮箱</span>: <span>${email}</span>
+   					</div>
+    			</div>
+    		</div>
+    	</div>
+	</div>
+</body>
+</html>
